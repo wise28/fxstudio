@@ -1,0 +1,132 @@
+.header {
+  align-items: center;
+  min-height: 90px;
+  position: relative;
+  &__logo {
+    position: absolute;
+    z-index: 1;
+    @include media-breakpoint-down(xls) {
+      position: static;
+    }
+    &-fx {
+      font-size: $font_size_title - 6;
+      font-family: $font_family_helvetica_bold;
+      font-weight: bold;
+      color: $main_color;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    &-studio {
+      font-family: $font_family_ubuntu_light;
+      font-size: $font_size_title - 9;
+      color: rgb(0, 0, 0);
+      line-height: 1.2;
+    }
+  }
+  &__menu {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: $font_family_roboto;
+    font-size: 15px;
+    &_position {
+      justify-content: center!important;
+    }
+  }
+  &-wrapper {
+    justify-content: space-around;
+  }
+  &__button {
+    position: absolute;
+    left: 70%;
+    @include media-breakpoint-down(xls) {
+      position: static;
+      padding-bottom: 20px;
+    }
+    &-tt {
+      background-color: transparent;
+      border: 1px solid $main_color;
+      cursor: pointer;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-family: $font_family_ubuntu_medium;
+      font-size: 17px;
+      color: $main_color;
+      @include links( #015f90, #015f90, #015f90, #015f90, none);
+    }
+  }
+  &__contacts {
+    //display: flex;
+    //justify-content: space-between;
+    position: absolute;
+    left: 87%;
+    @include media-breakpoint-down(xls) {
+      position: static;
+      display: flex;
+      padding-bottom: 20px;
+      //justify-content: space-between;
+    }
+    &-item {
+      background-color: transparent;
+      border: none;
+      &:hover, &:active, &:focus, &:visited {
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+      }
+    }
+  }
+
+}
+
+.header__menu-link {
+  color: #000!important;
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+  &:hover, &:active, &:focus, &:visited {
+    border-bottom: 3px solid $main_color;
+  }
+}
+.menu-wrap {
+  padding: 20px 15px;
+}
+.mega-menu-wrap {
+  display: none;
+}
+
+.mega-menu {
+  z-index: 2;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background-color: #003366;
+  padding: 25px;
+  //display: flex;
+  display: none;
+  @include media-breakpoint-down(md) {
+    position: static;
+    flex-direction: column;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  &__item{
+    width: 25%;
+    &_center {
+      text-align: center;
+    }
+  }
+  a {
+    color: white;
+  }
+  li > ul > li > a {
+    text-transform: none;
+    font-size: 15px;
+  }
+
+  li a {
+    display: block;
+    font-size: 14px;
+  }
+}

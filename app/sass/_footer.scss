@@ -1,0 +1,52 @@
+.footer-full-size {
+  background-color: #2f333d;
+}
+
+.footer {
+  font-size: 15px;
+  font-family: $font_family_roboto;
+  padding: 40px 0;
+  &__logo {
+    align-self: center;
+  }
+  &__services {
+    &-title {
+      text-transform: uppercase;
+    }
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  &__menu {
+    text-transform: uppercase;
+    &-link {
+      color: $main_color;
+    }
+  }
+  &__contacts {
+    &-title {
+      text-transform: uppercase;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.footer-link {
+  &__wrap {
+    margin-bottom: 0;
+  }
+  &_color {
+    color: #e1e1e1;
+    &:hover, &:active, &:focus, &:visited {
+      color: #e1e1e1;
+      font-weight: bold;
+    }
+  }
+  &-img {
+    padding-right: 10px;
+  }
+}

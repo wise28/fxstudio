@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url('Ubuntu-Regular.eot');
+  src: url('Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Ubuntu-Regular.svg#Ubuntu-Regular') format('svg'),
+       url('Ubuntu-Regular.ttf') format('truetype'),
+       url('Ubuntu-Regular.woff') format('woff'),
+       url('Ubuntu-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url('Ubuntu-Light.eot');
+    src: url('Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+    url('Ubuntu-Light.svg#Ubuntu-Light') format('svg'),
+    url('Ubuntu-Light.ttf') format('truetype'),
+    url('Ubuntu-Light.woff') format('woff'),
+    url('Ubuntu-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url('Ubuntu-Medium.eot');
+    src: url('Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+    url('Ubuntu-Medium.svg#Ubuntu-Medium') format('svg'),
+    url('Ubuntu-Medium.ttf') format('truetype'),
+    url('Ubuntu-Medium.woff') format('woff'),
+    url('Ubuntu-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Glamor-Medium';
+  src: url('Glamor-Medium.svg#Glamor-Medium') format('svg'),
+       url('Glamor-Medium.ttf') format('truetype'),
+       url('Glamor-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'glamor.medium';
+  src: url('glamor.medium.eot');
+  src: url('glamor.medium.eot?#iefix') format('embedded-opentype'),
+       url('glamor.medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'DINPro';
+  src: url('DINPro.eot');
+  src: url('DINPro.eot?#iefix') format('embedded-opentype'),
+       url('DINPro.svg#DINPro') format('svg'),
+       url('DINPro.ttf') format('truetype'),
+       url('DINPro.woff') format('woff'),
+       url('DINPro.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINPro-Bold';
+    src: url('DINPro-Bold.eot');
+    src: url('DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('DINPro-Bold.svg#DINPro-Bold') format('svg'),
+    url('DINPro-Bold.ttf') format('truetype'),
+    url('DINPro-Bold.woff') format('woff'),
+    url('DINPro-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
