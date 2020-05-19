@@ -15,6 +15,9 @@
       color: $main_color;
       line-height: 1.2;
       text-transform: uppercase;
+      &:hover {
+        opacity: 0.5;
+      }
     }
     &-studio {
       font-family: $font_family_ubuntu_light;
@@ -68,6 +71,9 @@
     &-item {
       background-color: transparent;
       border: none;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      min-height: 28px;
       &:hover, &:active, &:focus, &:visited {
         border-left: 1px solid grey;
         border-right: 1px solid grey;
@@ -81,6 +87,7 @@
   color: #000!important;
   padding-bottom: 0!important;
   padding-top: 0!important;
+  border-bottom: 3px solid transparent;
   &:hover, &:active, &:focus, &:visited {
     border-bottom: 3px solid $main_color;
   }

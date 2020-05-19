@@ -40,16 +40,18 @@
 
     $('.work-pict').hover(function(){
         $(this).toggleClass('display-none');
-        $('.work-hover').toggleClass('block-none');
+        $(this).find('.work-hover').toggleClass('block-none');
         $('.work-hover-text').toggleClass('block-none');
     });
 
     $('#work-pict-small-one').hover(function(){
         $(this).toggleClass('display-none');
+        $(this).find('.work-hover').toggleClass('block-none');
         $('#work-hover-small-one').toggleClass('block-none');
     });
     $('#work-pict-small-second').hover(function(){
         $(this).toggleClass('display-none');
+        $(this).find('.work-hover').toggleClass('block-none');
         $('#work-hover-small-second').toggleClass('block-none');
     });
 

@@ -23,7 +23,7 @@ gulp.task('browser-sync', function(){
     browserSync({
         server: {
           baseDir: 'app',
-          index: 'fxstudio_portfolio.html'
+          index: 'fxstudio_home.html'
         },
         notify: false
     });
