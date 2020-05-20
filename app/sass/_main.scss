@@ -122,6 +122,9 @@ a {
     padding-bottom: 45px;
     justify-content: space-between;
     font-family: $font_family_roboto;
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+    }
     &-item {
       width: 255px;
       font-weight: 600;
@@ -132,6 +135,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 5px;
       @include pseudo;
       &:before {
         content: url("../img/border-pseudo-bottom-min.png");
@@ -1185,3 +1189,18 @@ a {
 
 //the portfolio-item page styles end
 
+.navbar {
+  @include media-breakpoint-down(lg) {
+    position: static;
+  }
+}
+.navbar-collapse {
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    left: 0px;
+    right: 0px;
+    z-index: 3;
+  }
+}

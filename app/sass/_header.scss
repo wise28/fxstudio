@@ -5,7 +5,7 @@
   &__logo {
     position: absolute;
     z-index: 1;
-    @include media-breakpoint-down(xls) {
+    @include media-breakpoint-down(lg) {
       position: static;
     }
     &-fx {
@@ -33,6 +33,10 @@
     font-size: 15px;
     &_position {
       justify-content: center!important;
+      margin-right: 100px;
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+      }
     }
   }
   &-wrapper {
@@ -41,16 +45,20 @@
   &__button {
     position: absolute;
     left: 70%;
-    @include media-breakpoint-down(xls) {
+    @include media-breakpoint-down(lg) {
       position: static;
       padding-bottom: 20px;
     }
+    //@include media-breakpoint-down(lg) {
+    //  position: static;
+    //  padding-bottom: 20px;
+    //}
     &-tt {
       background-color: transparent;
       border: 1px solid $main_color;
       cursor: pointer;
       border-radius: 25px;
-      padding: 10px 20px;
+      padding: 10px;
       font-family: $font_family_ubuntu_medium;
       font-size: 17px;
       color: $main_color;
@@ -61,13 +69,17 @@
     //display: flex;
     //justify-content: space-between;
     position: absolute;
-    left: 87%;
-    @include media-breakpoint-down(xls) {
+    right: 0;
+    text-align: right;
+    @include media-breakpoint-down(lg) {
       position: static;
       display: flex;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       //justify-content: space-between;
     }
+    //@include media-breakpoint-down(lg) {
+    //  padding-bottom: 20px;
+    //}
     &-item {
       background-color: transparent;
       border: none;
@@ -136,4 +148,8 @@
     display: block;
     font-size: 14px;
   }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 7px;
 }
